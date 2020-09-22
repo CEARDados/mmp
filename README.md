@@ -1,2 +1,2 @@
 # mmp
-Projeto Multi-Mapa - Repositório Público
+Projeto Multi-Mapa CEAR/UFPB - Repositório Público
