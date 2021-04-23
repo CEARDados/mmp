@@ -1,0 +1,105 @@
+.layout_style {
+    background-color: rgb(255, 255, 255);
+}
+
+/*
+Títulos e subtítulos
+*/
+.title_style {
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: .1rem
+}
+
+.subtitle_style {
+    font-weight: bold;
+}
+
+.row_style {
+    background-color: rgb(139, 214, 214);
+    border: 1px solid rgb(140, 157, 177);
+    margin-top: 10px;
+    margin-bottom: 10px;
+    padding: 15px;
+}
+
+.column_style {
+    color: rgb(58, 58, 58);
+    background-color: rgb(186, 235, 235);
+    border: 2px solid rgb(140, 157, 177);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.20), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 4px;
+    text-align: center;
+    padding: 15px;
+}
+
+.zera_margin-left {
+    margin-left: 0px;
+}
+
+.dropdown_style {
+    color: black;
+    background-color: white;
+    /*margin-left: 2%;*/
+    width: 100%;
+}
+
+.button_style_index {
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: bold;
+    font-weight: 750;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    margin-top: 20px;
+    height: 40px;
+    width: 20%;
+    margin-top: 12px;
+    margin-left: 50px;
+    color: black;
+    border-radius: 4px;
+    border: 1px solid #bbb;
+    cursor: pointer;
+    box-sizing: border-box;
+}
+
+/*
+Não tem graph_style. Deve usar layout.
+*/
+
+.img_style {
+    height: 100px;
+}
+
+.map_style {
+    width: 98%;
+    height: 400px;
+}
+
+/*
+.markdown_style {
+    background-color: gray;
+}
+*/
+
+/*
+product é formado por imagens e texto, logo precisamos de 2 classes para estilo.
+*/
+
+.product_img_style {
+    height: 200px;
+}
+
+.product_markdown_style {
+    text-align: left;
+}
+
+.upload_style {
+    margin-left:2%;
+    width: 96%;
+    border-width: 1px;
+    border-style: dashed;
+    border-radius: 5px;
+    text-align: center;
+};
