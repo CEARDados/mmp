@@ -1,0 +1,131 @@
+{
+    "$schema": "https://joseitooliveira.github.io/j2d-schema/json2dash.json",
+
+    "layout": {
+        "rows": [
+            {
+                "columns": [
+                    {
+                        "obs": "esq",
+                        "className": "two columns column_style",
+                        "type": "img",
+        
+                        "id": "ufpb_logo",
+                        "file_path": "./images/logo_ufpb.png",
+                        "alt": "Logotipo da UFPB"
+                    },
+                    {
+                        "obs": "centro",
+                        "className": "eight columns column_style",
+                        "type": "markdown",
+        
+                        "id": "titulo",
+                        "text": [
+                            "# Multi-Mapa",
+                            "Exemplo com Graph"
+                        ]
+                    },
+                    {
+                        "obs": "dir",
+                        "className": "two columns column_style",
+                        "type": "img",
+        
+                        "id": "cear_logo",
+                        "file_path": "./images/logo_cear.png",
+                        "alt": "Logotipo do CEAR"
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
+                        "obs": "grafico",
+                        "className": "twelve columns column_style",
+                        "type": "graph_v02",
+
+                        "id": "graph_bar",
+                        "file_path": "./data/df_EstadualFinal.csv",
+                        "encoding": "latin-1",
+                        "figure_type": "bar-group",
+                        "data": {
+                            "col_x": "Nome_Munic", 
+                            "type_col_x": "category",
+                            "list_cols_y": ["T2M_MAX","T2M","T2M_MIN"], 
+                            "list_name_traces": ["T2M_MAX","T2M","T2M_MIN"]
+                        },
+                        "layout": {
+                            "plot_bgcolor": "#555555",
+                            "paper_bgcolor": "#555555",
+                            "font": {
+                                "color": "white"
+                            },
+                            "margin": {
+                                "l": 60,
+                                "r": 60,
+                                "t": 80,
+                                "b": 180
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
+                        "obs": "mapa",
+                        "className": "twelve columns column_style",
+                        "type": "map",
+
+                        "id": "mapa_prectot",
+                        "title": "Precipitação Média",
+                        "base": {
+                            "location": [-7.129694,-37.00],
+                            "zoom_start": 8,
+                            "tiles": "OpenStreetMap"
+                        },
+                        "layers": {
+                            "PRECTOT": {
+                                "type": "choropleth",
+                                "geo_file_path": "./data/df_EstadualFinal.csv",
+                                "geo_encoding": "latin-1",
+                                "geo_col_key": "Nome_Munic",
+                                "data_file_path": "./data/df_EstadualFinal.csv",
+                                "data_encoding": "latin-1",
+                                "data_col_key": "Nome_Munic",
+                                "data_col_target": "PRECTOT",
+                                "layer_name": "Precipitação Média",
+                                "show": "True",
+                                "smooth_factor": 1,
+                                "bins": 20,
+                                "fill_color": "YlOrRd"
+                            },
+                            "T2M": {
+                                "type": "choropleth",
+                                "geo_file_path": "./data/df_EstadualFinal.csv",
+                                "geo_encoding": "latin-1",
+                                "geo_col_key": "Nome_Munic",
+                                "data_file_path": "./data/df_EstadualFinal.csv",
+                                "data_encoding": "latin-1",
+                                "data_col_key": "Nome_Munic",
+                                "data_col_target": "T2M",
+                                "layer_name": "Temperatura Média 2m"
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "columns": [
+                    {
+                        "obs": "col_1",
+                        "className": "twelve columns column_style",
+                        "type": "markdown",
+    
+                        "id": "mensagem",
+                        "text": "**Projeto Multi-Mapa (CEAR/UFPB) - Abril de 2021**"
+                    }
+                ]
+            }
+        ]
+    }
+}

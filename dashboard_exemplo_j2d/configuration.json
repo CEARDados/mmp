@@ -1,0 +1,8 @@
+{
+    "name": "1ª Aplicação Web - json2dash",
+    "start_page_name": "1ª Aplicação Web",
+    "start_page_filename": "./apps/exemplo.json",
+
+    "description": "Projeto desenvolvido por professores e alunos do CEAR/UFPB.",
+    "reply-to": "mm@cear.ufpb.br"
+}
